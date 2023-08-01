@@ -7,24 +7,29 @@ import turtle as t
 # Enter the center
 x, y = eval(input('Enter the center (x, y): '))
 
+t.speed(2)
 t.penup()
 t.goto(x, y)
-t.write('0')
 
-t.forward(30)
-t.left(120)
+t.goto(x + 40, y)
 t.pendown()
-t.forward(50)
+t.circle(40, steps=6)
 
-t.right(120 - 90)
-t.forward(50)
+t.penup()
+t.goto(x - 40, y)
+t.pendown()
+t.circle(40, steps=6)
 
-t.right(120 - 90)
-t.forward(50)
+t.penup()
+t.goto(x - 40, y - 80)
+t.pendown()
+t.circle(40, steps=6)
 
-t.right(120)
-t.forward(50)
+t.penup()
+t.goto(x + 40, y - 80)
+t.pendown()
+t.circle(40, steps=6)
 
-
+t.hideturtle()
 
 t.done()
