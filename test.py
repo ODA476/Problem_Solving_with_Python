@@ -1,55 +1,8 @@
-import turtle as t
+import random
 
-t.pensize(3)
-t.speed(10)
+num1 = random.randint(0, 9)
+num2 = random.randint(0, 9)
 
-t.penup()
-t.goto(-200, -50)
-t.pendown()
-t.begin_fill()
-t.color('red')
-t.circle(40, steps=3)
-t.end_fill()
+answer = eval(input(f'What is {num1} + {num2}? ').strip())
 
-t.penup()
-t.goto(-100, -50)
-t.pendown()
-t.begin_fill()
-t.color('blue')
-t.circle(40, steps=4)
-t.end_fill()
-
-t.penup()
-t.goto(0, -50)
-t.pendown()
-t.begin_fill()
-t.color('green')
-t.circle(40, steps=5)
-t.end_fill()
-
-t.penup()
-t.goto(100, -50)
-t.pendown()
-t.begin_fill()
-t.color('yellow')
-t.circle(40, steps=6)
-t.end_fill()
-
-t.penup()
-t.goto(200, -50)
-t.pendown()
-t.begin_fill()
-t.color('purple')
-t.circle(40)
-t.end_fill()
-
-t.penup()
-t.goto(-100, 50)
-t.pendown()
-t.color('green')
-t.write('Cool Colorful Shapes', font=('Times', 18, 'bold'))
-
-t.hideturtle()
-
-
-t.done()
+print(f'{num1} + {num2} = {answer} is {answer == num1 + num2}')
