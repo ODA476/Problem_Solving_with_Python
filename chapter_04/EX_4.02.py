@@ -13,3 +13,5 @@ num3 = random.randint(0, 9)
 answer = eval(input(f'What is {num1} + {num2} + {num3} ? ').strip())
 
 print(f'{num1} + {num2} + {num3} = {answer} is {num1 + num2 + num3 == answer}')
+
+

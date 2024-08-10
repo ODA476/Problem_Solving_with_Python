@@ -10,9 +10,27 @@ num1, num2, num3 = eval(input('Enter three integers: ').strip())
 max = num1
 
 # we will compare about max, if any number is greate than max, we will replace
+# select the maximum number
 if num2 > max:
     max = num2
+
 if num3 > max:
     max = num3
 
-print(f'The max number is {max}')
+    # select other order number
+if max == num1:
+    if num2 > num3:
+        print(num3, num2, max)
+    else:
+        print(num2, num3, max)
+
+elif max == num2:
+    if num3 > num1:
+        print(num1, num3, max)
+    else:
+        print(num3, num1, max)
+else:
+    if num2 > num1:
+        print(num1, num2, max)
+    else:
+        print(num2, num1, max)
