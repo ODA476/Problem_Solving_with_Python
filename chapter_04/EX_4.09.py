@@ -17,5 +17,9 @@ weight_per_price_2 = weight2 / price2
 # choose the better, the better has less cost than other
 if weight_per_price_1 < weight_per_price_2:
     print('Package 1 has the better price.')
-else:
+
+elif weight_per_price_1 > weight_per_price_2:
     print('Package 2 has the better price.')
+
+else:
+    print('Two packages have the same price.')
